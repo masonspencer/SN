@@ -4,12 +4,13 @@
         <access>package_private</access>
         <active>true</active>
         <api_name>x_186678_cloudreso.OTC_ECS_LifeCycleOperations</api_name>
-        <client_callable>false</client_callable>
+        <client_callable>true</client_callable>
         <description/>
         <name>OTC_ECS_LifeCycleOperations</name>
         <script><![CDATA[var OTC_ECS_LifeCycleOperations = Class.create();
 
 //Depending on multi-tenacy implentation, this would be moved to a table for lookup.
+//If multiple projects,  pass them through the functions and combine with the returns based on customer lookup.
 var xAuthToken = gs.getProperty('x_186678_cloudreso.OTC_Authentication_Token');
 var otcURL = gs.getProperty('x_186678_cloudreso.OTC_URL');
 var projectID = gs.getProperty('x_186678_cloudreso.OTC_ProjectId');
@@ -19,7 +20,7 @@ OTC_ECS_LifeCycleOperations.prototype = {
 		
     },
 	
-	createECS: function() {
+	createECServer: function() {
 		try { 
 		 var r = new sn_ws.RESTMessageV2('x_186678_cloudreso.OTC_ECS_InstanceCreate', 'Default GET');
 		 r.setStringParameterNoEscape('project_id', projectID);
@@ -37,20 +38,64 @@ OTC_ECS_LifeCycleOperations.prototype = {
 			return message;
 		}
 	},
+	
+	deleteECServer: function(serverId) {
+		 try { 
+		 var r = new sn_ws.RESTMessageV2('x_186678_cloudreso.OTC_ECS_InstanceDelete', 'OTC_ECS_InstanceDelete');
+		var xAuthToken = gs.getProperty('x_186678_cloudreso.OTC_Authentication_Token');
+		var otcURL = gs.getProperty('x_186678_cloudreso.OTC_URL');
+		var projectID = gs.getProperty('x_186678_cloudreso.OTC_ProjectId');
 
+		 r.setStringParameterNoEscape('serverId', serverId);
+
+		 var response = r.execute();
+		 var responseBody = response.getBody();
+		 var httpStatus = response.getStatusCode();
+			 //Add error handling based on status code here.
+			 
+			 //No response body sample JSON available for this.
+			 return responseBody;
+		}
+		catch(ex) {
+		 var message = ex.getMessage();
+			return message;
+		}
+	},
+	
+	queryECServer: function () {
+		 try { 
+			 var r = new sn_ws.RESTMessageV2('x_186678_cloudreso.OTC_ECS_InstancesQuery', 'OTC_ECS_InstancesQuery');
+			var xAuthToken = gs.getProperty('x_186678_cloudreso.OTC_Authentication_Token');
+			var otcURL = gs.getProperty('x_186678_cloudreso.OTC_URL');
+			var projectID = gs.getProperty('x_186678_cloudreso.OTC_ProjectId');
+
+			 var response = r.execute();
+			 var responseBody = response.getBody();
+			 var httpStatus = response.getStatusCode();
+			 //Add error handling based on status code here.
+			
+			 return responseBody;
+			 
+			}
+			catch(ex) {
+			 var message = ex.getMessage();
+				return message;
+			}
+	},
+	
     type: 'OTC_ECS_LifeCycleOperations'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-01-17 21:48:50</sys_created_on>
         <sys_id>c31ecbd0db330300dbd6d170cf96191d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>OTC_ECS_LifeCycleOperations</sys_name>
         <sys_package display_value="CloudResources" source="x_186678_cloudreso">390d0bd0db330300dbd6d170cf961995</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="CloudResources">390d0bd0db330300dbd6d170cf961995</sys_scope>
         <sys_update_name>sys_script_include_c31ecbd0db330300dbd6d170cf96191d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-01-17 22:32:50</sys_updated_on>
+        <sys_updated_on>2018-01-17 23:46:19</sys_updated_on>
     </sys_script_include>
 </record_update>

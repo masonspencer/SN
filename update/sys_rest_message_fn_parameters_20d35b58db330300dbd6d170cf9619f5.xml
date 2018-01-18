@@ -2,7 +2,7 @@
 <record_update table="sys_rest_message_fn_parameters">
     <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
         <name>project_id</name>
-        <rest_message_function display_value="Default GET">320093d4db330300dbd6d170cf961930</rest_message_function>
+        <rest_message_function display_value="OTC_ECS_InstanceCreate">320093d4db330300dbd6d170cf961930</rest_message_function>
         <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-01-17 22:13:15</sys_created_on>

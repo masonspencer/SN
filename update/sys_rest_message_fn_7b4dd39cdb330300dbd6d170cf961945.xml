@@ -6,26 +6,26 @@
         <basic_auth_profile/>
         <basic_auth_user/>
         <content/>
-        <function_name>OTC_ECS_InstanceCreate</function_name>
-        <http_method>post</http_method>
+        <function_name>OTC_ECS_InstancesQuery</function_name>
+        <http_method>get</http_method>
         <lock>false</lock>
         <oauth2_profile/>
         <protocol_name/>
-        <qualified_name>OTC_ECS_InstanceCreate [ OTC_ECS_InstanceCreate ]</qualified_name>
-        <rest_endpoint>https://${otcURL}/v1/${project_id}/cloudservers</rest_endpoint>
-        <rest_message display_value="OTC_ECS_InstanceCreate">0d4e0f94db330300dbd6d170cf96199c</rest_message>
+        <qualified_name>OTC_ECS_InstancesQuery [ OTC_ECS_InstancesQuery ]</qualified_name>
+        <rest_endpoint>https://${otcURL}/v2/${project_id}/servers</rest_endpoint>
+        <rest_message display_value="OTC_ECS_InstancesQuery">42fc139cdb330300dbd6d170cf961915</rest_message>
         <sys_class_name>sys_rest_message_fn</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-01-17 21:56:45</sys_created_on>
-        <sys_id>320093d4db330300dbd6d170cf961930</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>OTC_ECS_InstanceCreate</sys_name>
+        <sys_created_on>2018-01-17 22:54:42</sys_created_on>
+        <sys_id>7b4dd39cdb330300dbd6d170cf961945</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>OTC_ECS_InstancesQuery</sys_name>
         <sys_package display_value="CloudResources" source="x_186678_cloudreso">390d0bd0db330300dbd6d170cf961995</sys_package>
         <sys_policy/>
         <sys_scope display_value="CloudResources">390d0bd0db330300dbd6d170cf961995</sys_scope>
-        <sys_update_name>sys_rest_message_fn_320093d4db330300dbd6d170cf961930</sys_update_name>
+        <sys_update_name>sys_rest_message_fn_7b4dd39cdb330300dbd6d170cf961945</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-01-17 22:35:44</sys_updated_on>
+        <sys_updated_on>2018-01-17 22:56:00</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mid_server/>
         <use_mutual_auth>false</use_mutual_auth>

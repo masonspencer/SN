@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables/>
+        <default>false</default>
+        <homepage display_value="index">46cc384147532100ba13a5554ee49009</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page/>
+        <logo/>
+        <notfound_page/>
+        <quick_start_config/>
+        <sc_catalog display_value="OTC Operations">2438e394db730300dbd6d170cf961918</sc_catalog>
+        <sc_catalog_page display_value="sc_home">fe87a11147132100ba13a5554ee490b9</sc_catalog_page>
+        <sc_category_page/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="SP Header Menu">d150fd31cb10020000f8d856634c9ce6</sp_rectangle_menu>
+        <sqanda_knowledge_base/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:39:08</sys_created_on>
+        <sys_id>99272b14db730300dbd6d170cf9619dc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>OTC Portal</sys_name>
+        <sys_package display_value="CloudResources" source="x_186678_cloudreso">390d0bd0db330300dbd6d170cf961995</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CloudResources">390d0bd0db330300dbd6d170cf961995</sys_scope>
+        <sys_update_name>sp_portal_99272b14db730300dbd6d170cf9619dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:44:40</sys_updated_on>
+        <theme display_value="Stock">79315153cb33310000f8d856634c9c4b</theme>
+        <title>OTC Portal</title>
+        <url_suffix>OTC_operations</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=99272b14db730300dbd6d170cf9619dc"/>
+</record_update>

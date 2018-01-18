@@ -5,27 +5,33 @@
         <basic_auth_password/>
         <basic_auth_profile/>
         <basic_auth_user/>
-        <content/>
-        <function_name>OTC_ECS_InstanceCreate</function_name>
+        <content>{&#13;
+    "servers": [&#13;
+        {&#13;
+            "id": "${serverId}"&#13;
+        }&#13;
+    ]&#13;
+        }</content>
+        <function_name>OTC_ECS_InstanceDelete</function_name>
         <http_method>post</http_method>
         <lock>false</lock>
         <oauth2_profile/>
         <protocol_name/>
-        <qualified_name>OTC_ECS_InstanceCreate [ OTC_ECS_InstanceCreate ]</qualified_name>
-        <rest_endpoint>https://${otcURL}/v1/${project_id}/cloudservers</rest_endpoint>
-        <rest_message display_value="OTC_ECS_InstanceCreate">0d4e0f94db330300dbd6d170cf96199c</rest_message>
+        <qualified_name>OTC_ECS_InstanceDelete [ OTC_ECS_InstanceDelete ]</qualified_name>
+        <rest_endpoint>https://${otcURL}/v1/${project_id}/cloudservers/delete</rest_endpoint>
+        <rest_message display_value="OTC_ECS_InstanceDelete">38c89b1cdb330300dbd6d170cf961957</rest_message>
         <sys_class_name>sys_rest_message_fn</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-01-17 21:56:45</sys_created_on>
-        <sys_id>320093d4db330300dbd6d170cf961930</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>OTC_ECS_InstanceCreate</sys_name>
+        <sys_created_on>2018-01-17 22:35:04</sys_created_on>
+        <sys_id>48d81b1cdb330300dbd6d170cf961980</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>OTC_ECS_InstanceDelete</sys_name>
         <sys_package display_value="CloudResources" source="x_186678_cloudreso">390d0bd0db330300dbd6d170cf961995</sys_package>
         <sys_policy/>
         <sys_scope display_value="CloudResources">390d0bd0db330300dbd6d170cf961995</sys_scope>
-        <sys_update_name>sys_rest_message_fn_320093d4db330300dbd6d170cf961930</sys_update_name>
+        <sys_update_name>sys_rest_message_fn_48d81b1cdb330300dbd6d170cf961980</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-01-17 22:35:44</sys_updated_on>
+        <sys_updated_on>2018-01-17 22:43:48</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
         <use_mid_server/>
         <use_mutual_auth>false</use_mutual_auth>

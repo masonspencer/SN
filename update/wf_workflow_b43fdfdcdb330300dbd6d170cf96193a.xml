@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"subflows":[],"stages":{},"activities":{},"ends":["f83fdfdcdb330300dbd6d170cf96193c"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>f03fdfdcdb330300dbd6d170cf96193b,ab65abd0db730300dbd6d170cf961963,bbb4ef10db730300dbd6d170cf961918,fb26abd0db730300dbd6d170cf96199b,f0956b90db730300dbd6d170cf9619fc,f83fdfdcdb330300dbd6d170cf96193c</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>f03fdfdcdb330300dbd6d170cf96193b,ab65abd0db730300dbd6d170cf961963,bbb4ef10db730300dbd6d170cf961918,fb26abd0db730300dbd6d170cf96199b,f0956b90db730300dbd6d170cf9619fc,f83fdfdcdb330300dbd6d170cf96193c</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>OTC Instance LifeCycle Opperations</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">f03fdfdcdb330300dbd6d170cf96193b</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:02:58</sys_created_on>
+        <sys_id>04fed710db730300dbd6d170cf9619c2</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:37:10</sys_updated_on>
+        <table>sc_request</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="OTC Instance LifeCycle Opperations">b43fdfdcdb330300dbd6d170cf96193a</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>OTC Instance LifeCycle Opperations</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:02:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b43fdfdcdb330300dbd6d170cf96193a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>OTC Instance LifeCycle Opperations</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CloudResources" source="x_186678_cloudreso">390d0bd0db330300dbd6d170cf961995</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CloudResources">390d0bd0db330300dbd6d170cf961995</sys_scope>
+        <sys_update_name>wf_workflow_b43fdfdcdb330300dbd6d170cf96193a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:15:36</sys_updated_on>
+        <table>sc_request</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:02:58</sys_created_on>
+        <sys_id>f03fdfdcdb330300dbd6d170cf96193b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:25:50</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="OTC Instance LifeCycle Opperations">04fed710db730300dbd6d170cf9619c2</workflow_version>
+        <x>25</x>
+        <y>104</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f03fdfdcdb330300dbd6d170cf96193b"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">f03fdfdcdb330300dbd6d170cf96193b</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:02:58</sys_created_on>
+        <sys_id>703fdfdcdb330300dbd6d170cf96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:02:58</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create Server</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:34:29</sys_created_on>
+        <sys_id>fb26abd0db730300dbd6d170cf96199b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:34:46</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="OTC Instance LifeCycle Opperations">04fed710db730300dbd6d170cf9619c2</workflow_version>
+        <x>413</x>
+        <y>180</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=fb26abd0db730300dbd6d170cf96199b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fb26abd0db730300dbd6d170cf96199b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:34:29</sys_created_on>
+        <sys_id>6666abd0db730300dbd6d170cf961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:34:29</sys_updated_on>
+        <value>var OTC_ECS_LifeCycleOperations = new OTC_ECS_LifeCycleOperations();&#13;
+OTC_ECS_LifeCycleOperations.createECServer();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fb26abd0db730300dbd6d170cf96199b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:34:29</sys_created_on>
+        <sys_id>6666abd0db730300dbd6d170cf961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:34:29</sys_updated_on>
+        <value>var OTC_ECS_LifeCycleOperations = new OTC_ECS_LifeCycleOperations();&#13;
+OTC_ECS_LifeCycleOperations.createECServer();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Server">fb26abd0db730300dbd6d170cf96199b</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:34:29</sys_created_on>
+        <sys_id>aa66abd0db730300dbd6d170cf961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:34:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Delete Specified Server</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:32:55</sys_created_on>
+        <sys_id>f0956b90db730300dbd6d170cf9619fc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:34:38</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="OTC Instance LifeCycle Opperations">04fed710db730300dbd6d170cf9619c2</workflow_version>
+        <x>417</x>
+        <y>22</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f0956b90db730300dbd6d170cf9619fc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f0956b90db730300dbd6d170cf9619fc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:32:55</sys_created_on>
+        <sys_id>7306abd0db730300dbd6d170cf96199a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:34:39</sys_updated_on>
+        <value>var OTC_ECS_LifeCycleOperations = new OTC_ECS_LifeCycleOperations();&#13;
+OTC_ECS_LifeCycleOperations.deleteECServer(current.variables.serverId);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f0956b90db730300dbd6d170cf9619fc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:32:55</sys_created_on>
+        <sys_id>7306abd0db730300dbd6d170cf96199a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:34:39</sys_updated_on>
+        <value>var OTC_ECS_LifeCycleOperations = new OTC_ECS_LifeCycleOperations();&#13;
+OTC_ECS_LifeCycleOperations.deleteECServer(current.variables.serverId);</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Delete Specified Server">f0956b90db730300dbd6d170cf9619fc</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:32:55</sys_created_on>
+        <sys_id>3b06abd0db730300dbd6d170cf96199a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:32:55</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:02:58</sys_created_on>
+        <sys_id>f83fdfdcdb330300dbd6d170cf96193c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:25:56</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="OTC Instance LifeCycle Opperations">04fed710db730300dbd6d170cf9619c2</workflow_version>
+        <x>1004</x>
+        <y>115</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f83fdfdcdb330300dbd6d170cf96193c"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>OTC Server Creation</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:29</sys_created_on>
+        <sys_id>ab65abd0db730300dbd6d170cf961963</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:32</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="OTC Instance LifeCycle Opperations">04fed710db730300dbd6d170cf9619c2</workflow_version>
+        <x>183</x>
+        <y>171</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=ab65abd0db730300dbd6d170cf961963"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab65abd0db730300dbd6d170cf961963</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:29</sys_created_on>
+        <sys_id>0485e790db730300dbd6d170cf961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:29</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab65abd0db730300dbd6d170cf961963</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:29</sys_created_on>
+        <sys_id>4c85ebd0db730300dbd6d170cf961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:29</sys_updated_on>
+        <value>//Check for sys_id of request item&#13;
+var OTCServerDeletion= '68ce979cdb330300dbd6d170cf961981';&#13;
+var OTCServerCreation= 'b49ed310db730300dbd6d170cf961984';&#13;
+&#13;
+     if (current.sys_id == OTCServerCreation) {&#13;
+        return 'yes';&#13;
+     }&#13;
+     return 'no';</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab65abd0db730300dbd6d170cf961963</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:29</sys_created_on>
+        <sys_id>c485e790db730300dbd6d170cf961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:29</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab65abd0db730300dbd6d170cf961963</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:29</sys_created_on>
+        <sys_id>0485e790db730300dbd6d170cf961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:29</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab65abd0db730300dbd6d170cf961963</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:29</sys_created_on>
+        <sys_id>c485e790db730300dbd6d170cf961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:29</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ab65abd0db730300dbd6d170cf961963</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:29</sys_created_on>
+        <sys_id>4c85ebd0db730300dbd6d170cf961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:29</sys_updated_on>
+        <value>//Check for sys_id of request item&#13;
+var OTCServerDeletion= '68ce979cdb330300dbd6d170cf961981';&#13;
+var OTCServerCreation= 'b49ed310db730300dbd6d170cf961984';&#13;
+&#13;
+     if (current.sys_id == OTCServerCreation) {&#13;
+        return 'yes';&#13;
+     }&#13;
+     return 'no';</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="OTC Server Creation">ab65abd0db730300dbd6d170cf961963</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:29</sys_created_on>
+        <sys_id>0485ebd0db730300dbd6d170cf961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:29</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="OTC Server Creation">ab65abd0db730300dbd6d170cf961963</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:29</sys_created_on>
+        <sys_id>8085ebd0db730300dbd6d170cf961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:29</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>OTC Server Deletion</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:02</sys_created_on>
+        <sys_id>bbb4ef10db730300dbd6d170cf961918</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:08</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="OTC Instance LifeCycle Opperations">04fed710db730300dbd6d170cf9619c2</workflow_version>
+        <x>190</x>
+        <y>25</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=bbb4ef10db730300dbd6d170cf961918"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bbb4ef10db730300dbd6d170cf961918</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:02</sys_created_on>
+        <sys_id>5965a790db730300dbd6d170cf9619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:02</sys_updated_on>
+        <value>//Check for sys_id of request item&#13;
+var OTCServerDeletion= '68ce979cdb330300dbd6d170cf961981';&#13;
+var OTCServerCreation= 'b49ed310db730300dbd6d170cf961984';&#13;
+&#13;
+     if (current.sys_id == OTCServerDeletion) {&#13;
+        return 'yes';&#13;
+     }&#13;
+     return 'no';</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bbb4ef10db730300dbd6d170cf961918</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:02</sys_created_on>
+        <sys_id>9565a790db730300dbd6d170cf9619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:02</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bbb4ef10db730300dbd6d170cf961918</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:02</sys_created_on>
+        <sys_id>d165a790db730300dbd6d170cf9619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:02</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bbb4ef10db730300dbd6d170cf961918</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:02</sys_created_on>
+        <sys_id>d165a790db730300dbd6d170cf9619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:02</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bbb4ef10db730300dbd6d170cf961918</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:02</sys_created_on>
+        <sys_id>9565a790db730300dbd6d170cf9619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:02</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bbb4ef10db730300dbd6d170cf961918</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:02</sys_created_on>
+        <sys_id>5965a790db730300dbd6d170cf9619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:02</sys_updated_on>
+        <value>//Check for sys_id of request item&#13;
+var OTCServerDeletion= '68ce979cdb330300dbd6d170cf961981';&#13;
+var OTCServerCreation= 'b49ed310db730300dbd6d170cf961984';&#13;
+&#13;
+     if (current.sys_id == OTCServerDeletion) {&#13;
+        return 'yes';&#13;
+     }&#13;
+     return 'no';</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="OTC Server Deletion">bbb4ef10db730300dbd6d170cf961918</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:02</sys_created_on>
+        <sys_id>1165a790db730300dbd6d170cf9619ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:02</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="OTC Server Deletion">bbb4ef10db730300dbd6d170cf961918</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:02</sys_created_on>
+        <sys_id>9d65a790db730300dbd6d170cf9619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:02</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">8085ebd0db730300dbd6d170cf961975</condition>
+        <from display_value="OTC Server Creation">ab65abd0db730300dbd6d170cf961963</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:34:43</sys_created_on>
+        <sys_id>3176abd0db730300dbd6d170cf961976</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:34:43</sys_updated_on>
+        <to display_value="Create Server">fb26abd0db730300dbd6d170cf96199b</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">703fdfdcdb330300dbd6d170cf96193c</condition>
+        <from display_value="Begin">f03fdfdcdb330300dbd6d170cf96193b</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:30:38</sys_created_on>
+        <sys_id>4e85e3d0db730300dbd6d170cf9619f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:38</sys_updated_on>
+        <to display_value="OTC Server Creation">ab65abd0db730300dbd6d170cf961963</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">aa66abd0db730300dbd6d170cf961974</condition>
+        <from display_value="Create Server">fb26abd0db730300dbd6d170cf96199b</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:34:48</sys_created_on>
+        <sys_id>4f762fd0db730300dbd6d170cf961995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:34:48</sys_updated_on>
+        <to display_value="End">f83fdfdcdb330300dbd6d170cf96193c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">9d65a790db730300dbd6d170cf9619fe</condition>
+        <from display_value="OTC Server Deletion">bbb4ef10db730300dbd6d170cf961918</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:33:08</sys_created_on>
+        <sys_id>ae16abd0db730300dbd6d170cf961971</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:33:08</sys_updated_on>
+        <to display_value="Delete Specified Server">f0956b90db730300dbd6d170cf9619fc</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">703fdfdcdb330300dbd6d170cf96193c</condition>
+        <from display_value="Begin">f03fdfdcdb330300dbd6d170cf96193b</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:02:58</sys_created_on>
+        <sys_id>b03fdfdcdb330300dbd6d170cf96193d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:30:06</sys_updated_on>
+        <to display_value="OTC Server Deletion">bbb4ef10db730300dbd6d170cf961918</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">3b06abd0db730300dbd6d170cf96199a</condition>
+        <from display_value="Delete Specified Server">f0956b90db730300dbd6d170cf9619fc</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:33:12</sys_created_on>
+        <sys_id>e3166f90db730300dbd6d170cf9619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:33:12</sys_updated_on>
+        <to display_value="End">f83fdfdcdb330300dbd6d170cf96193c</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-01-17 23:02:58</sys_created_on>
+        <sys_id>7c3fdfdcdb330300dbd6d170cf961939</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-01-17 23:02:58</sys_updated_on>
+        <workflow_version display_value="OTC Instance LifeCycle Opperations">04fed710db730300dbd6d170cf9619c2</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=b43fdfdcdb330300dbd6d170cf96193a^sys_id!=04fed710db730300dbd6d170cf9619c2">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>
